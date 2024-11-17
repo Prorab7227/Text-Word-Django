@@ -13,7 +13,7 @@ def home(request):
 
                 # Создаем ответ с файлом для скачивания
                 response = HttpResponse(word_file, content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
-                response['Content-Disposition'] = 'attachment; filename="output.docx"'
+                response['Content-Disposition'] = 'attachment; filename="output.doc"'
                 return response
 
     form = Inputed_textForm()
